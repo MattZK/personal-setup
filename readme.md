@@ -8,9 +8,12 @@
 - 512GB M.2 PCIe NVMe SSD
 - NVIDIA GeForce GTX 1650 4GB GDDR5
 
-## Configs
+##  Hardware Configs
 - Display Related: [here](display.md)
 - Wireless Connection Related: [here](connections.md)
+
+## Software Configs
+- Terminal / ZSH: [here](terminal.md)
 
 ## TODO:
 - Fix graphics drivers (bumblebee)

@@ -19,3 +19,4 @@
 - Fix graphics drivers (bumblebee)
 - Fix power management
 - Fix Xrandr brightness jumps
+- Fix night mode (Xrandr)

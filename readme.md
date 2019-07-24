@@ -11,12 +11,14 @@
 ##  Hardware Configs
 - Display Related: [here](display.md)
 - Wireless Connection Related: [here](connections.md)
+- Power Management [here](powermanagement.md)
 
 ## Software Configs
 - Terminal / ZSH: [here](terminal.md)
+- Graphics: [here](graphics.md)
 
 ## TODO:
-- Fix graphics drivers (bumblebee)
-- Fix power management
+- Fix graphics drivers (bumblebee) \ This might take a while until nvidia releases updates.
+- Verify power management
 - Fix Xrandr brightness jumps
 - Fix night mode (Xrandr)

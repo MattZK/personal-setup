@@ -2,7 +2,7 @@
 
 ## OLED Display Brightness script
 
-TODO: Autorun script on login/boot (currently having issues with permissions, Udev not able to access displays)
+Save as `/usr/local/bin/xbacklightmon`
 
 ```sh
 #!/bin/sh
@@ -28,22 +28,17 @@ inotifywait -me modify --format '' "$path"/actual_brightness | while read; do
 done
 ```
 
-#### Turn it into a service (BROKEN: Display detection issues)
-Add a `.service` file in `/etc/systemd/system`.
+Add autostart script. Save as `control-brightness.desktop` in `~/.config/autostart`
 
-Example service
 ```
-[Unit]
-Description=Background service for OLED Brightness
-ConditionFileIsExecutable=/usr/local/bin/xbacklightmon
-
-[Service]
-ExecStart=/usr/local/bin/xbacklightmon
-TimeoutSec=0
-StandardOutput=tty
-
-[Install]
-WantedBy=multi-user.target
+[Desktop Entry]
+Name=XBrightness
+GenericName=Brightness Control
+Comment=Background task to control xrandr brightness instead of backlight brightness
+Exec=/home/matthias/xbacklightmon
+Terminal=false
+Type=Application
+X-GNOME-Autostart-enabled=true
 ```
 
 ## Set custom scaling factor for an app

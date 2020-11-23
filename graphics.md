@@ -12,3 +12,6 @@ RUNTIME_PM_DRIVER_BLACKLIST="amdgpu mei_me nouveau nvidia pcieport radeon"
 Error: Cannot access secondary GPU - error: X did not start properly
 
 Set the `"AutoAddDevices"` option to `true` in `/etc/bumblebee/xorg.conf.nvidia`
+
+## Screen Flickering
+Fix: `echo 'on' > '/sys/bus/pci/devices/0000:01:00.0/power/control'`, through powertop.

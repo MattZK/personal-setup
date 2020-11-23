@@ -2,7 +2,7 @@
 
 ## OLED Display Brightness
 
-## New Fix
+### New Fix
 Install `linux-oled` kernel.
 
 ### Old Fix

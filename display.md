@@ -1,6 +1,7 @@
 # Display Settings
 
 ## OLED Display Brightness script
+Requires `inotify-tools` package!
 
 Save as `/usr/local/bin/xbacklightmon`
 
@@ -35,7 +36,7 @@ Add autostart script. Save as `control-brightness.desktop` in `~/.config/autosta
 Name=XBrightness
 GenericName=Brightness Control
 Comment=Background task to control xrandr brightness instead of backlight brightness
-Exec=/home/matthias/xbacklightmon
+Exec=/usr/local/bin/xbacklightmon
 Terminal=false
 Type=Application
 X-GNOME-Autostart-enabled=true

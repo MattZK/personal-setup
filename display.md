@@ -1,6 +1,11 @@
 # Display Settings
 
-## OLED Display Brightness script
+## OLED Display Brightness
+
+## New Fix
+Install `linux-oled` kernel.
+
+### Old Fix
 Requires `inotify-tools` package!
 
 Save as `/usr/local/bin/xbacklightmon`

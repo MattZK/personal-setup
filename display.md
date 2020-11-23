@@ -1,8 +1,6 @@
 # Display Settings
 
 ## OLED Display Brightness
-
-### New Fix
 Install `linux-oled` kernel.
 
 ## Set custom scaling factor for an app

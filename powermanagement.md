@@ -9,6 +9,12 @@ in `/etc/default/grub` and append `mem_sleep_default=deep` to `GRUB_CMDLINE_LINU
 GRUB_CMDLINE_LINUX_DEFAULT="mem_sleep_default=deep"
 ```
 
+## TLP
+
+Install: `yay -Syu tlp tlpui-git`
+
+
+
 ## Powertop
 
 `powertop` is efficient to manage power consumption.
